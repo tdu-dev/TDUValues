@@ -1,12 +1,8 @@
 // Generated from Master_Document_V_3.xlsx - sheet "Questions Weights V.6"
 // 68 questions x 5 answers. Effects are sparse: any axis not listed is 0.
+// Loaded as a classic script; `questions` is a global. Load axes.js before this file.
 
-export const AXES = [
-  "A1", "A2", "A3", "A4", "B1", "B2", "B3", "B4",
-  "C1", "C2", "C3", "C4", "D1", "D2", "D3", "D4",
-];
-
-export const questions = [
+const questions = [
   {
     id: 1,
     question: "People depend on each other...",
@@ -543,7 +539,7 @@ export const questions = [
       { text: "Worth taking seriously", effects: { C1: 0.8, C4: 1.25 } },
       { text: "One perspective among others", effects: {} },
       { text: "Immature food for thought", effects: { C1: -0.8, C4: -1.25 } },
-      { text: "Evidence of inexperience", effects: { C1: -1.6, C4: -2.5 } },
+      { text: "Evidence of inexperience", effects: { C1: -1.6, C4: 2.5 } },
     ],
   },
   {
@@ -756,5 +752,3 @@ export const questions = [
     ],
   },
 ];
-
-export default questions;

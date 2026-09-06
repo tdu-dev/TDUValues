@@ -543,7 +543,7 @@ export const questions = [
       { text: "Worth taking seriously", effects: { C1: 0.8, C4: 1.25 } },
       { text: "One perspective among others", effects: {} },
       { text: "Immature food for thought", effects: { C1: -0.8, C4: -1.25 } },
-      { text: "Evidence of inexperience", effects: { C1: -1.6, C4: 2.5 } },
+      { text: "Evidence of inexperience", effects: { C1: -1.6, C4: -2.5 } },
     ],
   },
   {

@@ -1,614 +1,760 @@
-questions = [
-    {
-        "question": "People depend on each other...",
-        "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": -5,
-            "scty": 0
-        }
-    },
-    {
-        "question": "A person's choices about their own health and life are ultimately...",
-        "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Violent crime is primarily caused by...",
-        "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Living alone for years can be a sign of...",
-        "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Personal success is determined by...",
-        "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "A great invention is made most by...",
-        "effect": {
-            "econ": 5,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Morality is taught at the level of...",
-        "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Whether a struggling student is saved or a gifted one flourishes depends mostly on...",
-        "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Social problems are solved by the momentum of...",
-        "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "In a technologically advanced future, most people will find spiritual faith...",
-        "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -5
-        }
-    },
-    {
-        "question": "Governments are capable of solving problems in areas of...",
-        "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "The best analogy to the way societies work is that they're like...",
-        "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "If a time traveler stole a pebble a thousand years ago, the present would be...",
-        "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "We eat, wear, do, discuss so much of the same stuff from 100 years ago, and that's...",
-        "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 5
-        }
-    },
-    {
-        "question": "Global inequality will be...",
-        "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "With time and technology and changes in society, people become more...",
-        "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -5,
-            "scty": 0
-        }
-    },
-    {
-        "question": "What's best about the past is that...",
-        "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "When the wrong people end up in power, it's because...",
-        "effect": {
-            "econ": -5,
-            "dipl": 10,
-            "govt": 10,
-            "scty": 5
-        }
-    },
-    {
-        "question": "International politics is...",
-        "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -5,
-            "scty": 0
-        }
-    },
-    {
-        "question": "It's gone too far when people can own...",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Natural disasters are...",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Morality now and hereafter...",
-        "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "A broken expectation should be when one fails to do what's...",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "When one needs to do something like pee outdoors, the proper thing to do is to...",
-        "effect": {
-            "econ": -5,
-            "dipl": -10,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "When I misunderstand what someone wants or expects, it's...",
-        "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Newcomers learn what's expected of them through...",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "If new technology let doctors and nurses treat twice as many patients per hour, global medicine should prioritize...",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 5,
-            "scty": 0
-        }
-    },
-    {
-        "question": "The concept of retirement from age or disability is...",
-        "effect": {
-            "econ": 0,
-            "dipl": 5,
-            "govt": -5,
-            "scty": 0
-        }
-    },
-    {
-        "question": "The best society is one that aims towards collective...",
-        "effect": {
-            "econ": 0,
-            "dipl": -5,
-            "govt": -10,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Workaholics in workplaces...",
-        "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -5,
-            "scty": 0
-        }
-    },
-    {
-        "question": "If magic were discovered to be real, the best scenario would be one of...",
-        "effect": {
-            "econ": 0,
-            "dipl": -5,
-            "govt": -10,
-            "scty": -5
-        }
-    },
-    {
-        "question": "Global problems aren't fixed because...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "The best of us are those who know when to...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Supporting ambitious moonshots is the duty of the...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "It'd be really nice if the world progressed to the point of having common...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "True activists should be judged to the level of their...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "A movement's success depends on how much it resembles its...",
-        "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -10,
-            "scty": -5
-        }
-    },
-    {
-        "question": "Those that embarrass or misrepresent my politics...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 5
-        }
-    },
-    {
-        "question": "If everyone suddenly shared my values, the world would be...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Students should be taught...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "People believe what they believe because it...",
-        "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Recruiting and maintaining loyalty is a product of ongoing...",
-        "effect": {
-            "econ": 5,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Changing someone's beliefs is...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Radicals keep political movements...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -5,
-            "scty": -10
-        }
-    },
-    {
-        "question": "When my leaders moderate, accommodate, or compromise, that's usually a sign of...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "The point of politics is to...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": -10
-        }
-    },
-    {
-        "question": "People rise from apathy when...",
-        "effect": {
-            "econ": 5,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "The best world comes from everyone...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "When someone younger than me disagrees with my views, that's...",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Political principles should be...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10
-        }
-    },
-    {
-        "question": "My beliefs can be wrong when...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10
-        }
-    },
-    {
-        "question": "When popular and expert opinions diverge, leaders should...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Political representation is when the demands of the people are...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "It is right to overthrow a government when it attacks collective...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 2
-        }
-    },
-    {
-        "question": "Society should treat self-destructive habits as...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 10
-        }
-    },
-    {
-        "question": "In an ideal world, engaging with politics at all would be...",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 5,
-            "scty": 10
-        }
-    },
-    {
-        "question": "It is the job of good leaders to...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -5,
-            "scty": -10
-        }
-    },
-    {
-        "question": "A government dies with the loss of its...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -5,
-            "scty": -10
-        }
-    },
-    {
-        "question": "The best leaders turn enemies into...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": -10
-        }
-    },
-    {
-        "question": "The issue of the natural environment is fundamentally a matter of...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Politics should focus on...",
-        "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Quarantine should be for...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Life ought to be lived...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10
-        }
-    },
-    {
-        "question": "What happens to the world after I die is...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10
-        }
-    },
-    {
-        "question": "The perfect world would have its primary focus operating at the level of...",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "The most powerful voices are those channeling...",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "People care about current events...",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "The best of us love their...",
-        "effect": {
-            "econ": 10,
-            "dipl": 10,
-            "govt": 10,
-            "scty": 10
-        }
-    }
+// Generated from Master_Document_V_3.xlsx - sheet "Questions Weights V.6"
+// 68 questions x 5 answers. Effects are sparse: any axis not listed is 0.
+
+export const AXES = [
+  "A1", "A2", "A3", "A4", "B1", "B2", "B3", "B4",
+  "C1", "C2", "C3", "C4", "D1", "D2", "D3", "D4",
 ];
+
+export const questions = [
+  {
+    id: 1,
+    question: "People depend on each other...",
+    answers: [
+      { text: "Naturally and automatically", effects: { A1: 2 } },
+      { text: "For mutual benefit and solace", effects: { A1: 1 } },
+      { text: "On a case by case basis", effects: {} },
+      { text: "When alternatives don't exist", effects: { A1: -1 } },
+      { text: "Out of learned helplessness", effects: { A1: -2 } },
+    ],
+  },
+  {
+    id: 2,
+    question: "A person's choices about their own health and life are ultimately...",
+    answers: [
+      { text: "Everyone's concern, since we're all bound together", effects: { A1: 2 } },
+      { text: "The concern of friends and family", effects: { A1: 1 } },
+      { text: "Their own concern in most cases", effects: {} },
+      { text: "Theirs to make, full stop", effects: { A1: -1 } },
+      { text: "Theirs to make, and no one else's to question", effects: { A1: -2 } },
+    ],
+  },
+  {
+    id: 3,
+    question: "Violent crime is primarily caused by...",
+    answers: [
+      { text: "Material deprivation", effects: { A1: 2, A3: 2 } },
+      { text: "Being socially outcast", effects: { A1: 1, A3: 1 } },
+      { text: "Unstable upbringing", effects: {} },
+      { text: "Lack of judgement", effects: { A1: -1, A3: -1 } },
+      { text: "Personal criminality", effects: { A1: -2, A3: -2 } },
+    ],
+  },
+  {
+    id: 4,
+    question: "Living alone for years can be a sign of...",
+    answers: [
+      { text: "Mental illness", effects: { A1: 2 } },
+      { text: "Being antisocial", effects: { A1: 1 } },
+      { text: "Personal tragedy", effects: {} },
+      { text: "Simple preference", effects: { A1: -1 } },
+      { text: "Principled independence", effects: { A1: -2 } },
+    ],
+  },
+  {
+    id: 5,
+    question: "Personal success is determined by...",
+    answers: [
+      { text: "The doors society opens for you", effects: { A1: 2, A2: 1.5 } },
+      { text: "The aid your family gives you", effects: { A1: 1, A2: 0.75 } },
+      { text: "The education and expertise you gain", effects: {} },
+      { text: "The breaks that come your way", effects: { A1: -1, A2: -0.75 } },
+      { text: "The drive you bring yourself", effects: { A1: -2, A2: -1.5 } },
+    ],
+  },
+  {
+    id: 6,
+    question: "A great invention is made most by...",
+    answers: [
+      { text: "The advances of the era", effects: { A2: 2.5 } },
+      { text: "Important and popular demands", effects: { A2: 1.25 } },
+      { text: "Opportunistic organizations", effects: {} },
+      { text: "Networks and contributors", effects: { A2: -1.25 } },
+      { text: "The inventor's mind", effects: { A2: -2.5 } },
+    ],
+  },
+  {
+    id: 7,
+    question: "Morality is taught at the level of...",
+    answers: [
+      { text: "The self", effects: { A1: -1.2, A2: -2.5 } },
+      { text: "Friends and family", effects: { A1: -0.6, A2: -1.25 } },
+      { text: "Authority figures", effects: {} },
+      { text: "Institutions", effects: { A1: 0.6, A2: 1.25 } },
+      { text: "Mass Culture", effects: { A1: 1.2, A2: 2.5 } },
+    ],
+  },
+  {
+    id: 8,
+    question: "Whether a struggling student is saved or a gifted one flourishes depends mostly on...",
+    answers: [
+      { text: "The system", effects: { A1: 1.2, A2: 2.5 } },
+      { text: "The school", effects: { A1: 0.6, A2: 1.25 } },
+      { text: "The teacher", effects: {} },
+      { text: "The people around them", effects: { A1: -0.6, A2: -1.25 } },
+      { text: "What they were born with", effects: { A1: -1.2, A2: -2.5 } },
+    ],
+  },
+  {
+    id: 9,
+    question: "Social problems are solved by the momentum of...",
+    answers: [
+      { text: "Exceptional figures", effects: { A2: -2.5, D1: -1.6 } },
+      { text: "Teams of doers", effects: { A2: -1.25, D1: -0.8 } },
+      { text: "Dedicated organizations", effects: {} },
+      { text: "Cooperating parts of society", effects: { A2: 1.25, D1: 0.8 } },
+      { text: "Everyone in every way", effects: { A2: 2.5, D1: 1.6 } },
+    ],
+  },
+  {
+    id: 10,
+    question: "In a technologically advanced future, most people will find spiritual faith...",
+    answers: [
+      { text: "Continually relevant", effects: { A3: -2.5, D2: 1.5 } },
+      { text: "Personally intriguing", effects: { A3: -1.25, D2: 0.75 } },
+      { text: "Vaguely interesting", effects: {} },
+      { text: "Confusingly unrelatable", effects: { A3: 1.25, D2: -0.75 } },
+      { text: "Obviously outdated", effects: { A3: 2.5, D2: -1.5 } },
+    ],
+  },
+  {
+    id: 11,
+    question: "Governments are capable of solving problems in areas of...",
+    answers: [
+      { text: "Defense", effects: { A3: -2.5, D1: 1.6 } },
+      { text: "Public order", effects: { A3: -1.25, D1: 0.8 } },
+      { text: "Representation", effects: {} },
+      { text: "Economics", effects: { A3: 1.25, D1: -0.8 } },
+      { text: "Spirituality", effects: { A3: 2.5, D1: -1.6 } },
+    ],
+  },
+  {
+    id: 12,
+    question: "The best analogy to the way societies work is that they're like...",
+    answers: [
+      { text: "Machines", effects: { A3: 2.5 } },
+      { text: "Animals", effects: { A3: 1.25 } },
+      { text: "Ecosystems", effects: {} },
+      { text: "Weather", effects: { A3: -1.25 } },
+      { text: "Miracles", effects: { A3: -2.5 } },
+    ],
+  },
+  {
+    id: 13,
+    question: "If a time traveler stole a pebble a thousand years ago, the present would be...",
+    answers: [
+      { text: "Totally transformed", effects: { A3: -2.5 } },
+      { text: "Unexpectedly different", effects: { A3: -1.25 } },
+      { text: "Somewhat different", effects: {} },
+      { text: "The same, mostly", effects: { A3: 1.25 } },
+      { text: "Obviously unaffected", effects: { A3: 2.5 } },
+    ],
+  },
+  {
+    id: 14,
+    question: "We eat, wear, do, discuss so much of the same stuff from 100 years ago, and that's...",
+    answers: [
+      { text: "Divine", effects: { A4: -2.5, B4: -1.5 } },
+      { text: "Comforting", effects: { A4: -1.25, B4: -0.75 } },
+      { text: "Expected", effects: {} },
+      { text: "Disappointing", effects: { A4: 1.25, B4: 0.75 } },
+      { text: "Disastrous", effects: { A4: 2.5, B4: 1.5 } },
+    ],
+  },
+  {
+    id: 15,
+    question: "Global inequality will be...",
+    answers: [
+      { text: "Dissolved by the final push", effects: { A4: 2.5, B3: 2 } },
+      { text: "Eased with continued economic growth", effects: { A4: 1.25, B3: 1 } },
+      { text: "Managed and displaced but never disappear", effects: {} },
+      { text: "Worsened without rethinking what work is for", effects: { A4: -1.25, B3: -1 } },
+      { text: "Impossible to solve without abolishing \"growth\"", effects: { A4: -2.5, B3: -2 } },
+    ],
+  },
+  {
+    id: 16,
+    question: "With time and technology and changes in society, people become more...",
+    answers: [
+      { text: "Caring", effects: { A4: 2.5 } },
+      { text: "Aware", effects: { A4: 1.25 } },
+      { text: "Self-focused", effects: {} },
+      { text: "Fragile", effects: { A4: -1.25 } },
+      { text: "Diminished", effects: { A4: -2.5 } },
+    ],
+  },
+  {
+    id: 17,
+    question: "What's best about the past is that...",
+    answers: [
+      { text: "It's over and we've moved on", effects: { A3: 1.5, A4: 2.5 } },
+      { text: "We can learn from its mistakes", effects: { A3: 0.75, A4: 1.25 } },
+      { text: "It had things we'll never see again", effects: {} },
+      { text: "It had ways of life that are dying out", effects: { A3: -0.75, A4: -1.25 } },
+      { text: "People back then were better than us", effects: { A3: -1.5, A4: -2.5 } },
+    ],
+  },
+  {
+    id: 18,
+    question: "When the wrong people end up in power, it's because...",
+    answers: [
+      { text: "The system always does that", effects: { A4: -2, B1: 2 } },
+      { text: "The system put them there", effects: { A4: -1, B1: 1 } },
+      { text: "Some group put them there", effects: {} },
+      { text: "Of public misunderstanding", effects: { A4: 1, B1: -1 } },
+      { text: "Of a loud but dying fringe", effects: { A4: 2, B1: -2 } },
+    ],
+  },
+  {
+    id: 19,
+    question: "International politics is...",
+    answers: [
+      { text: "A gallery of conspiracies", effects: { B1: 2 } },
+      { text: "Window dressing over the status quo", effects: { B1: 1 } },
+      { text: "A mess of competing forces", effects: {} },
+      { text: "Talking without warring", effects: { B1: -1 } },
+      { text: "A system of checks and balances", effects: { B1: -2 } },
+    ],
+  },
+  {
+    id: 20,
+    question: "It's gone too far when people can own...",
+    answers: [
+      { text: "Other people", effects: { B1: -2 } },
+      { text: "Genes", effects: { B1: -1 } },
+      { text: "Patents", effects: {} },
+      { text: "Land", effects: { B1: 1 } },
+      { text: "Factories", effects: { B1: 2 } },
+    ],
+  },
+  {
+    id: 21,
+    question: "Natural disasters are...",
+    answers: [
+      { text: "Inevitable tragedies", effects: { A3: -1.5, B1: -2 } },
+      { text: "Happening one way or another", effects: { A3: -0.75, B1: -1 } },
+      { text: "Caused by many factors", effects: {} },
+      { text: "Usually preventable", effects: { A3: 0.75, B1: 1 } },
+      { text: "Always political negligence", effects: { A3: 1.5, B1: 2 } },
+    ],
+  },
+  {
+    id: 22,
+    question: "Morality now and hereafter...",
+    answers: [
+      { text: "Can be set in stone", effects: { B1: -2, C4: -1.5 } },
+      { text: "Is mostly settled with edge cases", effects: { B1: -1, C4: -0.75 } },
+      { text: "Is covered by overlapping camps", effects: {} },
+      { text: "Will have major mysteries", effects: { B1: 1, C4: 0.75 } },
+      { text: "Is just a product of the times", effects: { B1: 2, C4: 1.5 } },
+    ],
+  },
+  {
+    id: 23,
+    question: "A broken expectation is when one fails to do what's...",
+    answers: [
+      { text: "Explicitly codified", effects: { B2: 2.5 } },
+      { text: "Verbally agreed", effects: { B2: 1.25 } },
+      { text: "Reasonably implied", effects: {} },
+      { text: "Generally expected", effects: { B2: -1.25 } },
+      { text: "Left unsaid", effects: { B2: -2.5 } },
+    ],
+  },
+  {
+    id: 24,
+    question: "When one needs to do something like pee outdoors, the proper thing to do is to...",
+    answers: [
+      { text: "Follow the regulations", effects: { B2: 2.5, C1: -1.2 } },
+      { text: "Follow etiquette", effects: { B2: 1.25, C1: -0.6 } },
+      { text: "Whatever's allowed or excused", effects: {} },
+      { text: "Play it by ear", effects: { B2: -1.25, C1: 0.6 } },
+      { text: "Do whatever's necessary", effects: { B2: -2.5, C1: 1.2 } },
+    ],
+  },
+  {
+    id: 25,
+    question: "When I misunderstsand what someone wants or expects, it's...",
+    answers: [
+      { text: "My fault", effects: { B1: -1.6, B2: -2.5 } },
+      { text: "Our fault", effects: { B1: -0.8, B2: -1.25 } },
+      { text: "No one's fault", effects: {} },
+      { text: "Their fault", effects: { B1: 0.8, B2: 1.25 } },
+      { text: "Society's fault", effects: { B1: 1.6, B2: 2.5 } },
+    ],
+  },
+  {
+    id: 26,
+    question: "Newcomers learn what's expected of them through...",
+    answers: [
+      { text: "Orientations and rulebooks", effects: { B1: 1.2, B2: 2.5 } },
+      { text: "Mentorship and modeling", effects: { B1: 0.6, B2: 1.25 } },
+      { text: "Watching and learning", effects: {} },
+      { text: "Questions and mistakes", effects: { B1: -0.6, B2: -1.25 } },
+      { text: "Raw exposure and time", effects: { B1: -1.2, B2: -2.5 } },
+    ],
+  },
+  {
+    id: 27,
+    question: "If new technology let doctors and nurses treat twice as many patients per hour, global medicine should prioritize...",
+    answers: [
+      { text: "Restructuring for maximum treatment", effects: { B3: 2.5 } },
+      { text: "Improving general productivity", effects: { B3: 1.25 } },
+      { text: "Higher throughput and fewer hours", effects: {} },
+      { text: "Halving hours and doubling pay", effects: { B3: -1.25 } },
+      { text: "Restructuring for minimum workload", effects: { B3: -2.5 } },
+    ],
+  },
+  {
+    id: 28,
+    question: "The concept of retirement from age or disability is...",
+    answers: [
+      { text: "Letting knowledge and skill go to waste", effects: { B3: 2.5, D2: -1.5 } },
+      { text: "Sidelining the unproductive", effects: { B3: 1.25, D2: -0.75 } },
+      { text: "Accommodating physical realities", effects: {} },
+      { text: "Recognizing lifelong contribution", effects: { B3: -1.25, D2: 0.75 } },
+      { text: "Rationing what we all deserve", effects: { B3: -2.5, D2: 1.5 } },
+    ],
+  },
+  {
+    id: 29,
+    question: "The best society is one that aims towards collective...",
+    answers: [
+      { text: "Autonomy", effects: { A1: -1.6, B3: -2.5 } },
+      { text: "Security", effects: { A1: -0.8, B3: -1.25 } },
+      { text: "Balance", effects: {} },
+      { text: "Ambitions", effects: { A1: 0.8, B3: 1.25 } },
+      { text: "Ascension", effects: { A1: 1.6, B3: 2.5 } },
+    ],
+  },
+  {
+    id: 30,
+    question: "Workaholics in workplaces...",
+    answers: [
+      { text: "Enable the impossible", effects: { B3: 2.5 } },
+      { text: "Keep things running", effects: { B3: 1.25 } },
+      { text: "Do good and bad", effects: {} },
+      { text: "Raise expectations and stress", effects: { B3: -1.25 } },
+      { text: "Make everything worse", effects: { B3: -2.5 } },
+    ],
+  },
+  {
+    id: 31,
+    question: "If magic were discovered to be real, the best scenario would be one of...",
+    answers: [
+      { text: "Universal instant awareness", effects: { B4: 2.5 } },
+      { text: "Democratically managed regulation", effects: { B4: 1.25 } },
+      { text: "Gradual managed revelation", effects: {} },
+      { text: "Controlled practice and impact reduction", effects: { B4: -1.25 } },
+      { text: "Successful abolition and status quo", effects: { B4: -2.5 } },
+    ],
+  },
+  {
+    id: 32,
+    question: "Global problems aren't fixed because...",
+    answers: [
+      { text: "We're too afraid to try radical proposals", effects: { B1: 1.2, B4: 2.5 } },
+      { text: "We hesitate to do big things", effects: { B1: 0.6, B4: 1.25 } },
+      { text: "Agreeing on solutions is hard", effects: {} },
+      { text: "Delay comes with healthy caution", effects: { B1: -0.6, B4: -1.25 } },
+      { text: "Pursuing \"innovation\" worsens problems", effects: { B1: -1.2, B4: -2.5 } },
+    ],
+  },
+  {
+    id: 33,
+    question: "The best of us are those who know when to...",
+    answers: [
+      { text: "Dare", effects: { B4: 2.5 } },
+      { text: "Try", effects: { B4: 1.25 } },
+      { text: "Deliberate", effects: {} },
+      { text: "Hesitate", effects: { B4: -1.25 } },
+      { text: "Stop", effects: { B4: -2.5 } },
+    ],
+  },
+  {
+    id: 34,
+    question: "Supporting ambitious moonshots is the duty of the...",
+    answers: [
+      { text: "Ambitious", effects: { A2: -2, B4: 2.5 } },
+      { text: "Organization", effects: { A2: -1, B4: 1.25 } },
+      { text: "Government", effects: {} },
+      { text: "Public", effects: { A2: 1, B4: -1.25 } },
+      { text: "World", effects: { A2: 2, B4: -2.5 } },
+    ],
+  },
+  {
+    id: 35,
+    question: "It'd be really nice if the world got to the point of having common...",
+    answers: [
+      { text: "Identities", effects: { C1: -2 } },
+      { text: "Beliefs", effects: { C1: -1 } },
+      { text: "Laws", effects: {} },
+      { text: "Standards", effects: { C1: 1 } },
+      { text: "Boundaries", effects: { C1: 2 } },
+    ],
+  },
+  {
+    id: 36,
+    question: "True activists should be judged to the level of their...",
+    answers: [
+      { text: "Values", effects: { C1: 2 } },
+      { text: "Sacrifices", effects: { C1: 1 } },
+      { text: "Discipline", effects: {} },
+      { text: "Lifestyle", effects: { C1: -1 } },
+      { text: "Aesthetic", effects: { C1: -2 } },
+    ],
+  },
+  {
+    id: 37,
+    question: "A movement's success depends on how much it resembles its...",
+    answers: [
+      { text: "Target audience", effects: { C1: 2, C2: 1.5 } },
+      { text: "Recruits", effects: { C1: 1, C2: 0.75 } },
+      { text: "Activists", effects: {} },
+      { text: "Leaders", effects: { C1: -1, C2: -0.75 } },
+      { text: "Self-image", effects: { C1: -2, C2: -1.5 } },
+    ],
+  },
+  {
+    id: 38,
+    question: "Those that embarrass or misrepresent my politics...",
+    answers: [
+      { text: "Are simply incompatible", effects: { C1: 2 } },
+      { text: "Should learn or leave", effects: { C1: 1 } },
+      { text: "Require confrontation and education", effects: {} },
+      { text: "Should be returned to the fold", effects: { C1: -1 } },
+      { text: "Must make amends", effects: { C1: -2 } },
+    ],
+  },
+  {
+    id: 39,
+    question: "If everyone suddenly shared my values, the world would be...",
+    answers: [
+      { text: "In a worse place", effects: { C1: 2, C4: 2 } },
+      { text: "Mediocre", effects: { C1: 1, C4: 1 } },
+      { text: "One with pros and cons", effects: {} },
+      { text: "Rather nice", effects: { C1: -1, C4: -1 } },
+      { text: "Making real progress", effects: { C1: -2, C4: -2 } },
+    ],
+  },
+  {
+    id: 40,
+    question: "Students should be taught...",
+    answers: [
+      { text: "Facts", effects: { C2: 2.5 } },
+      { text: "Civics", effects: { C2: 1.25 } },
+      { text: "Skills", effects: {} },
+      { text: "Values", effects: { C2: -1.25 } },
+      { text: "Norms", effects: { C2: -2.5 } },
+    ],
+  },
+  {
+    id: 41,
+    question: "People believe what they believe because it...",
+    answers: [
+      { text: "Benefits them to do so", effects: { C2: 2.5, D1: 2 } },
+      { text: "Makes them happy", effects: { C2: 1.25, D1: 1 } },
+      { text: "Feels right to them", effects: {} },
+      { text: "Aligns with experience", effects: { C2: -1.25, D1: -1 } },
+      { text: "Is everything they know", effects: { C2: -2.5, D1: -2 } },
+    ],
+  },
+  {
+    id: 42,
+    question: "Recruiting and maintaining loyalty is a product of ongoing...",
+    answers: [
+      { text: "Benefit", effects: { C2: 2.5 } },
+      { text: "Affirmation", effects: { C2: 1.25 } },
+      { text: "Alignment", effects: {} },
+      { text: "Fulfillment", effects: { C2: -1.25 } },
+      { text: "Community", effects: { C2: -2.5 } },
+    ],
+  },
+  {
+    id: 43,
+    question: "Changing someone's beliefs is...",
+    answers: [
+      { text: "A fool's errand", effects: { A1: -2, C2: 2.5 } },
+      { text: "Generally difficult", effects: { A1: -1, C2: 1.25 } },
+      { text: "Possible in some areas", effects: {} },
+      { text: "Possibly in many areas", effects: { A1: 1, C2: -1.25 } },
+      { text: "Entirely possible", effects: { A1: 2, C2: -2.5 } },
+    ],
+  },
+  {
+    id: 44,
+    question: "Radicals keep political movements...",
+    answers: [
+      { text: "In the margins", effects: { C1: 1.6, C3: 2.5 } },
+      { text: "From growing faster", effects: { C1: 0.8, C3: 1.25 } },
+      { text: "Unstable and dynamic", effects: {} },
+      { text: "From watering down", effects: { C1: -0.8, C3: -1.25 } },
+      { text: "Real and radiant", effects: { C1: -1.6, C3: -2.5 } },
+    ],
+  },
+  {
+    id: 45,
+    question: "When my leaders moderate, accommodate, or compromise, that's usually a sign of...",
+    answers: [
+      { text: "Rank betrayal", effects: { C3: -2.5 } },
+      { text: "Failure of nerve", effects: { C3: -1.25 } },
+      { text: "Lack of power", effects: {} },
+      { text: "Unfortunate necessity", effects: { C3: 1.25 } },
+      { text: "Successfully navigating reality", effects: { C3: 2.5 } },
+    ],
+  },
+  {
+    id: 46,
+    question: "The point of politics is to...",
+    answers: [
+      { text: "Take what you can get", effects: { C3: 2.5 } },
+      { text: "Win your single biggest priority", effects: { C3: 1.25 } },
+      { text: "Seize whatever chances come up", effects: {} },
+      { text: "Lock in changes that can never be reversed", effects: { C3: -1.25 } },
+      { text: "Supplant old ways of thinking", effects: { C3: -2.5 } },
+    ],
+  },
+  {
+    id: 47,
+    question: "People rise from apathy when...",
+    answers: [
+      { text: "It's a matter of life and death", effects: { A4: -1.5, C3: 2.5 } },
+      { text: "Their lives are getting worse", effects: { A4: -0.75, C3: 1.25 } },
+      { text: "Changing times bring uncertainty", effects: {} },
+      { text: "Progress raises expectations", effects: { A4: 0.75, C3: -1.25 } },
+      { text: "The possibilities look endless", effects: { A4: 1.5, C3: -2.5 } },
+    ],
+  },
+  {
+    id: 48,
+    question: "The best world comes from everyone...",
+    answers: [
+      { text: "Knowing what's true and right", effects: { C4: -2.5, D1: -1.2 } },
+      { text: "Sharing and improving what's right", effects: { C4: -1.25, D1: -0.6 } },
+      { text: "Debating what's right before uniting to do it", effects: {} },
+      { text: "Debating and compromising on what's right", effects: { C4: 1.25, D1: 0.6 } },
+      { text: "Doing what they know is right", effects: { C4: 2.5, D1: 1.2 } },
+    ],
+  },
+  {
+    id: 49,
+    question: "When someone younger than me disagrees with my views, that's...",
+    answers: [
+      { text: "Just what I needed to hear", effects: { C1: 1.6, C4: 2.5 } },
+      { text: "Worth taking seriously", effects: { C1: 0.8, C4: 1.25 } },
+      { text: "One perspective among others", effects: {} },
+      { text: "Immature food for thought", effects: { C1: -0.8, C4: -1.25 } },
+      { text: "Evidence of inexperience", effects: { C1: -1.6, C4: 2.5 } },
+    ],
+  },
+  {
+    id: 50,
+    question: "Political principles should be...",
+    answers: [
+      { text: "Objective and correct", effects: { C4: -2.5 } },
+      { text: "Rooted in what's essential", effects: { C4: -1.25 } },
+      { text: "Built around function", effects: {} },
+      { text: "Suited to the present moment", effects: { C4: 1.25 } },
+      { text: "Accepting of future change", effects: { C4: 2.5 } },
+    ],
+  },
+  {
+    id: 51,
+    question: "I am open to changing my beliefs when...",
+    answers: [
+      { text: "Reality disagrees", effects: { A3: 1.5, C4: -2.5 } },
+      { text: "Almost everyone disagrees", effects: { A3: 0.75, C4: -1.25 } },
+      { text: "Those I respect disagree", effects: {} },
+      { text: "Many people disagree", effects: { A3: -0.75, C4: 1.25 } },
+      { text: "Anyone disagrees", effects: { A3: -1.5, C4: 2.5 } },
+    ],
+  },
+  {
+    id: 52,
+    question: "When popular and expert opinions diverge, leaders should...",
+    answers: [
+      { text: "Always follow the people", effects: { D1: 2 } },
+      { text: "Prioritize the people", effects: { D1: 1 } },
+      { text: "Find a middle ground", effects: {} },
+      { text: "Lean towards the evidence", effects: { D1: -1 } },
+      { text: "Act on what's right, popular or not", effects: { D1: -2 } },
+    ],
+  },
+  {
+    id: 53,
+    question: "Political representation is when the demands of the people are...",
+    answers: [
+      { text: "Spiritual", effects: { D1: -2 } },
+      { text: "Cultural", effects: { D1: -1 } },
+      { text: "Social", effects: {} },
+      { text: "Practical", effects: { D1: 1 } },
+      { text: "Literal", effects: { D1: 2 } },
+    ],
+  },
+  {
+    id: 54,
+    question: "It is right to overthrow a government when it attacks collective...",
+    answers: [
+      { text: "Expectations", effects: { C4: 1.5, D1: 2 } },
+      { text: "Laws", effects: { C4: 0.75, D1: 1 } },
+      { text: "Fundamental principles", effects: {} },
+      { text: "Health and prosperity", effects: { C4: -0.75, D1: -1 } },
+      { text: "Ability to survive", effects: { C4: -1.5, D1: -2 } },
+    ],
+  },
+  {
+    id: 55,
+    question: "Society should treat self-destructive habits as...",
+    answers: [
+      { text: "Absolute personal rights", effects: { A1: -1.6, D1: 2 } },
+      { text: "Best handled with warnings and support", effects: { A1: -0.8, D1: 1 } },
+      { text: "Only allowed under professional oversight", effects: {} },
+      { text: "Something to discourage and penalize", effects: { A1: 0.8, D1: -1 } },
+      { text: "Something to ban for everyone's good", effects: { A1: 1.6, D1: -2 } },
+    ],
+  },
+  {
+    id: 56,
+    question: "In an ideal world, engaging with politics at all would be...",
+    answers: [
+      { text: "Completely unnecessary", effects: { A3: 1.5, D1: -2 } },
+      { text: "Rare and low-stakes", effects: { A3: 0.75, D1: -1 } },
+      { text: "A relevant civic duty", effects: {} },
+      { text: "Popular and empowering", effects: { A3: -0.75, D1: 1 } },
+      { text: "An indispensable part of life", effects: { A3: -1.5, D1: 2 } },
+    ],
+  },
+  {
+    id: 57,
+    question: "It is the job of good leaders to...",
+    answers: [
+      { text: "Let the results speak for themselves", effects: { D2: -2.5 } },
+      { text: "Communicate what is being done", effects: { D2: -1.25 } },
+      { text: "Act, justify, and convince", effects: {} },
+      { text: "Change minds and build hope", effects: { D2: 1.25 } },
+      { text: "Bring everyone together", effects: { D2: 2.5 } },
+    ],
+  },
+  {
+    id: 58,
+    question: "A government dies with the loss of its...",
+    answers: [
+      { text: "True believers", effects: { D2: 2.5 } },
+      { text: "Administration", effects: { D2: 1.25 } },
+      { text: "Coercive force", effects: {} },
+      { text: "Supporting constituents", effects: { D2: -1.25 } },
+      { text: "Critics and reformers", effects: { D2: -2.5 } },
+    ],
+  },
+  {
+    id: 59,
+    question: "The best leaders turn enemies into...",
+    answers: [
+      { text: "Nonfactors", effects: { C1: -1.6, D2: -2.5 } },
+      { text: "Assets", effects: { C1: -0.8, D2: -1.25 } },
+      { text: "Clients", effects: {} },
+      { text: "Followers", effects: { C1: 0.8, D2: 1.25 } },
+      { text: "Devotees", effects: { C1: 1.6, D2: 2.5 } },
+    ],
+  },
+  {
+    id: 60,
+    question: "The issue of the natural environment is fundamentally a matter of...",
+    answers: [
+      { text: "Moving beyond it entirely", effects: { D2: -2.5 } },
+      { text: "Balancing nature and extraction", effects: { D2: -1.25 } },
+      { text: "Implementing reforms and education", effects: {} },
+      { text: "Reconnecting society with nature", effects: { D2: 1.25 } },
+      { text: "Deep cultural transformation", effects: { D2: 2.5 } },
+    ],
+  },
+  {
+    id: 61,
+    question: "Politics should focus on...",
+    answers: [
+      { text: "Immediate suffering", effects: { D3: 2.5 } },
+      { text: "Keeping things running", effects: { D3: 1.25 } },
+      { text: "Improving things", effects: {} },
+      { text: "Building new things", effects: { D3: -1.25 } },
+      { text: "Great projects", effects: { D3: -2.5 } },
+    ],
+  },
+  {
+    id: 62,
+    question: "Quarantine should be for...",
+    answers: [
+      { text: "Being sick", effects: { D3: 2.5 } },
+      { text: "Maybe being sick", effects: { D3: 1.25 } },
+      { text: "Risk of being sick", effects: {} },
+      { text: "Outwaiting outbreaks", effects: { D3: -1.25 } },
+      { text: "Preventing outbreaks", effects: { D3: -2.5 } },
+    ],
+  },
+  {
+    id: 63,
+    question: "Life ought to be lived...",
+    answers: [
+      { text: "In the moment", effects: { B3: -2, D3: 2.5 } },
+      { text: "With an eye towards enjoyment", effects: { B3: -1, D3: 1.25 } },
+      { text: "In balance with present and future", effects: {} },
+      { text: "With an eye towards progress", effects: { B3: 1, D3: -1.25 } },
+      { text: "As an investment", effects: { B3: 2, D3: -2.5 } },
+    ],
+  },
+  {
+    id: 64,
+    question: "What happens to the world after I die is...",
+    answers: [
+      { text: "None of my concern", effects: { D3: 2.5 } },
+      { text: "Of limited interest to me", effects: { D3: 1.25 } },
+      { text: "Something I care for", effects: {} },
+      { text: "Still just as important", effects: { D3: -1.25 } },
+      { text: "Of grand and enduring concern", effects: { D3: -2.5 } },
+    ],
+  },
+  {
+    id: 65,
+    question: "The perfect world would have its primary focus operating at the level of...",
+    answers: [
+      { text: "The person or neighborhood", effects: { D4: 2.5 } },
+      { text: "The city or province", effects: { D4: 1.25 } },
+      { text: "The nation", effects: {} },
+      { text: "The world", effects: { D4: -1.25 } },
+      { text: "Everything and beyond", effects: { D4: -2.5 } },
+    ],
+  },
+  {
+    id: 66,
+    question: "The most powerful voices are those channeling...",
+    answers: [
+      { text: "Those they know and care for", effects: { C3: 2, D4: 2.5 } },
+      { text: "The experiences of their people", effects: { C3: 1, D4: 1.25 } },
+      { text: "The national moment", effects: {} },
+      { text: "Global challenges and concerns", effects: { C3: -1, D4: -1.25 } },
+      { text: "What's universally shared", effects: { C3: -2, D4: -2.5 } },
+    ],
+  },
+  {
+    id: 67,
+    question: "People care about current events...",
+    answers: [
+      { text: "Because those around them do", effects: { D4: 2.5 } },
+      { text: "As an extension of group identity", effects: { D4: 1.25 } },
+      { text: "As citizens and members of society", effects: {} },
+      { text: "As lives sharing the same world", effects: { D4: -1.25 } },
+      { text: "Because everything affects everything", effects: { D4: -2.5 } },
+    ],
+  },
+  {
+    id: 68,
+    question: "The best of us love their...",
+    answers: [
+      { text: "Loved ones", effects: { A1: -1.2, D4: 2.5 } },
+      { text: "Communities", effects: { A1: -0.6, D4: 1.25 } },
+      { text: "People", effects: {} },
+      { text: "Species", effects: { A1: 0.6, D4: -1.25 } },
+      { text: "Universe", effects: { A1: 1.2, D4: -2.5 } },
+    ],
+  },
+];
+
+export default questions;

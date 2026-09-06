@@ -283,3 +283,86 @@ span.weight-300 {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* ------------------------------------------------------------------ */
+/* Results page (sixteen-axis version)                                 */
+/* ------------------------------------------------------------------ */
+.res-group {
+    background-color: #eeeeee;
+    border-radius: 16pt;
+    padding: 10pt 20pt 16pt;
+    margin: 14pt 0;
+}
+.res-group-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26pt;
+    line-height: 32pt;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 8pt 0 12pt;
+}
+.res-axis {
+    margin: 12pt 0 20pt;
+}
+.res-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12pt;
+    font-family: 'Montserrat', sans-serif;
+}
+.res-name {
+    font-size: 18pt;
+    color: #666666;
+    letter-spacing: 0.06em;
+}
+.res-band {
+    font-size: 24pt;
+    font-weight: 700;
+    text-align: right;
+}
+.res-track {
+    position: relative;
+    height: 26pt;
+    margin: 6pt 0 4pt;
+    background-color: #dddddd;
+    border-radius: 6pt;
+    overflow: hidden;
+}
+.res-fill {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.res-centre {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    margin-left: -1px;
+    background-color: #999999;
+}
+.res-poles {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12pt;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+    color: #555555;
+}
+.res-score {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15pt;
+    color: #333333;
+}
+.res-note {
+    font-size: 15pt;
+    color: #666666;
+}
+.res-wip {
+    color: #777777;
+    font-style: italic;
+}

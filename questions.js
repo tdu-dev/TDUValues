@@ -472,7 +472,7 @@ const questions = [
       { text: "A fool's errand", effects: { A1: -2, C2: 2.5 } },
       { text: "Generally difficult", effects: { A1: -1, C2: 1.25 } },
       { text: "Possible in some areas", effects: {} },
-      { text: "Possibly in many areas", effects: { A1: 1, C2: -1.25 } },
+      { text: "Possible in many areas", effects: { A1: 1, C2: -1.25 } },
       { text: "Entirely possible", effects: { A1: 2, C2: -2.5 } },
     ],
   },

@@ -84,11 +84,11 @@ const questions = [
     id: 8,
     question: "Whether a struggling student is saved or a gifted one flourishes depends mostly on...",
     answers: [
-      { text: "The system", effects: { A1: 1.2, A2: 2.5 } },
-      { text: "The school", effects: { A1: 0.6, A2: 1.25 } },
-      { text: "The teacher", effects: {} },
-      { text: "The people around them", effects: { A1: -0.6, A2: -1.25 } },
-      { text: "What they were born with", effects: { A1: -1.2, A2: -2.5 } },
+      { text: "Their educational system", effects: { A1: 1.2, A2: 2.5 } },
+      { text: "Their school quality", effects: { A1: 0.6, A2: 1.25 } },
+      { text: "Their teachers", effects: {} },
+      { text: "Their upbringing", effects: { A1: -0.6, A2: -1.25 } },
+      { text: "Their biology", effects: { A1: -1.2, A2: -2.5 } },
     ],
   },
   {
@@ -247,7 +247,7 @@ const questions = [
   },
   {
     id: 23,
-    question: "A broken expectation is when one fails to do what's...",
+    question: "A broken expectation should be when one fails to do what's...",
     answers: [
       { text: "Explicitly codified", effects: { B2: 2.5 } },
       { text: "Verbally agreed", effects: { B2: 1.25 } },
@@ -263,8 +263,8 @@ const questions = [
       { text: "Follow the regulations", effects: { B2: 2.5, C1: -1.2 } },
       { text: "Follow etiquette", effects: { B2: 1.25, C1: -0.6 } },
       { text: "Whatever's allowed or excused", effects: {} },
-      { text: "Play it by ear", effects: { B2: -1.25, C1: 0.6 } },
-      { text: "Do whatever's necessary", effects: { B2: -2.5, C1: 1.2 } },
+      { text: "Do whatever's necessary", effects: { B2: -1.25, C1: 0.6 } },
+      { text: "Do what you want", effects: { B2: -2.5, C1: 1.2 } },
     ],
   },
   {
@@ -337,7 +337,7 @@ const questions = [
     id: 31,
     question: "If magic were discovered to be real, the best scenario would be one of...",
     answers: [
-      { text: "Universal instant awareness", effects: { B4: 2.5 } },
+      { text: "Universal instant access", effects: { B4: 2.5 } },
       { text: "Democratically managed regulation", effects: { B4: 1.25 } },
       { text: "Gradual managed revelation", effects: {} },
       { text: "Controlled practice and impact reduction", effects: { B4: -1.25 } },
@@ -384,7 +384,7 @@ const questions = [
       { text: "Identities", effects: { C1: -2 } },
       { text: "Beliefs", effects: { C1: -1 } },
       { text: "Laws", effects: {} },
-      { text: "Standards", effects: { C1: 1 } },
+      { text: "Metrics", effects: { C1: 1 } },
       { text: "Boundaries", effects: { C1: 2 } },
     ],
   },

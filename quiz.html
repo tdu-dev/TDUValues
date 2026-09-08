@@ -26,11 +26,9 @@
 // Config
 // ---------------------------------------------------------------------------
 
-// Answers are stored high-to-low in the spreadsheet. Presenting them in that
-// fixed order lets a respondent learn that the top button is always the
-// positive end. Shuffling breaks that; the permutation is generated once at
-// start so going Back doesn't reorder a question mid-quiz.
-const SHUFFLE_ANSWERS = true;
+// Answers must stay in their original sequential order (they're meaningful,
+// e.g. low-to-high on a scale). Only the question order is randomized.
+const SHUFFLE_QUESTIONS = true;
 
 // ---------------------------------------------------------------------------
 // Startup validation
@@ -75,19 +73,18 @@ for (const q of questions) {
 // State
 // ---------------------------------------------------------------------------
 
-var qn = 0;                                    // current question index
-const picks = new Array(questions.length).fill(null);   // chosen answer index
+var qn = 0;                                              // position in questionOrder
+const picks = new Array(questions.length).fill(null);    // chosen answer index, keyed by ORIGINAL question index
 
-// Display order for each question's answers.
-const order = questions.map(q => {
-  const idx = q.answers.map((_, i) => i);
-  if (!SHUFFLE_ANSWERS) return idx;
-  for (let i = idx.length - 1; i > 0; i--) {   // Fisher-Yates
+// Randomized order in which questions are presented (array of original indices).
+// Generated once at start so Back doesn't reshuffle mid-quiz.
+const questionOrder = questions.map((_, i) => i);
+if (SHUFFLE_QUESTIONS) {
+  for (let i = questionOrder.length - 1; i > 0; i--) {    // Fisher-Yates
     const j = Math.floor(Math.random() * (i + 1));
-    [idx[i], idx[j]] = [idx[j], idx[i]];
+    [questionOrder[i], questionOrder[j]] = [questionOrder[j], questionOrder[i]];
   }
-  return idx;
-});
+}
 
 init_question();
 
@@ -96,7 +93,8 @@ init_question();
 // ---------------------------------------------------------------------------
 
 function init_question() {
-  const q = questions[qn];
+  const qi = questionOrder[qn];   // original index of the question being shown
+  const q = questions[qi];
 
   document.getElementById("question-text").innerHTML = q.question;
   document.getElementById("question-number").innerHTML =
@@ -105,22 +103,22 @@ function init_question() {
   const box = document.getElementById("answers");
   box.innerHTML = "";
 
-  for (const i of order[qn]) {
+  q.answers.forEach((a, i) => {
     const btn = document.createElement("button");
-    btn.className = "button" + (picks[qn] === i ? " selected" : "");
-    btn.textContent = q.answers[i].text;
-    btn.onclick = () => next_question(i);
+    btn.className = "button" + (picks[qi] === i ? " selected" : "");
+    btn.textContent = a.text;
+    btn.onclick = () => next_question(qi, i);
     box.appendChild(btn);
     box.appendChild(document.createElement("br"));
-  }
+  });
 
   const atStart = (qn === 0);
   document.getElementById("back_button").style.display = atStart ? 'none' : 'block';
   document.getElementById("back_button_off").style.display = atStart ? 'block' : 'none';
 }
 
-function next_question(answerIndex) {
-  picks[qn] = answerIndex;
+function next_question(questionIndex, answerIndex) {
+  picks[questionIndex] = answerIndex;
   qn++;
   if (qn < questions.length) {
     init_question();
@@ -141,7 +139,6 @@ function prev_question() {
 // ---------------------------------------------------------------------------
 
 // Map a raw total onto the -10..+10 scale that axes.js bands assume.
-// Written generally so an asymmetric axis still lands sensibly.
 function normalize(total, min, max) {
   if (max === min) return 0;
   return -10 + 20 * (total - min) / (max - min);

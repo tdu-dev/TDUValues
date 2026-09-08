@@ -187,7 +187,7 @@ const questions = [
       { text: "We can learn from its mistakes", effects: { A3: 0.75, A4: 1.25 } },
       { text: "It had things we'll never see again", effects: {} },
       { text: "It had ways of life that are dying out", effects: { A3: -0.75, A4: -1.25 } },
-      { text: "People back then were better than us", effects: { A3: -1.5, A4: -2.5 } },
+      { text: "It raised better people", effects: { A3: -1.5, A4: -2.5 } },
     ],
   },
   {
@@ -258,18 +258,18 @@ const questions = [
   },
   {
     id: 24,
-    question: "When one needs to do something like pee outdoors, the proper thing to do is to...",
+    question: "When one needs to do something like pee outdoors, the proper thing to do is...",
     answers: [
       { text: "Follow the regulations", effects: { B2: 2.5, C1: -1.2 } },
       { text: "Follow etiquette", effects: { B2: 1.25, C1: -0.6 } },
       { text: "Whatever's allowed or excused", effects: {} },
-      { text: "Do whatever's necessary", effects: { B2: -1.25, C1: 0.6 } },
-      { text: "Do what you want", effects: { B2: -2.5, C1: 1.2 } },
+      { text: "Whatever's necessary", effects: { B2: -1.25, C1: 0.6 } },
+      { text: "What you want", effects: { B2: -2.5, C1: 1.2 } },
     ],
   },
   {
     id: 25,
-    question: "When I misunderstsand what someone wants or expects, it's...",
+    question: "When I misunderstand what someone wants or expects, it's...",
     answers: [
       { text: "My fault", effects: { B1: -1.6, B2: -2.5 } },
       { text: "Our fault", effects: { B1: -0.8, B2: -1.25 } },
@@ -462,7 +462,7 @@ const questions = [
       { text: "Affirmation", effects: { C2: 1.25 } },
       { text: "Alignment", effects: {} },
       { text: "Fulfillment", effects: { C2: -1.25 } },
-      { text: "Community", effects: { C2: -2.5 } },
+      { text: "Kinship", effects: { C2: -2.5 } },
     ],
   },
   {
@@ -577,13 +577,13 @@ const questions = [
   },
   {
     id: 53,
-    question: "Political representation is when the demands of the people are...",
+    question: "Political representation is when the demands of the people are always...",
     answers: [
-      { text: "Spiritual", effects: { D1: -2 } },
-      { text: "Cultural", effects: { D1: -1 } },
-      { text: "Social", effects: {} },
-      { text: "Practical", effects: { D1: 1 } },
-      { text: "Literal", effects: { D1: 2 } },
+      { text: "Spiritually fulfilled", effects: { D1: -2 } },
+      { text: "Culturally fulfilled", effects: { D1: -1 } },
+      { text: "Practically fulfilled", effects: {} },
+      { text: "Materially fulfilled", effects: { D1: 1 } },
+      { text: "Literally fulfilled", effects: { D1: 2 } },
     ],
   },
   {
@@ -603,8 +603,8 @@ const questions = [
     answers: [
       { text: "Absolute personal rights", effects: { A1: -1.6, D1: 2 } },
       { text: "Best handled with warnings and support", effects: { A1: -0.8, D1: 1 } },
-      { text: "Only allowed under professional oversight", effects: {} },
-      { text: "Something to discourage and penalize", effects: { A1: 0.8, D1: -1 } },
+      { text: "Something to discourage and penalize", effects: {} },
+      { text: "Only allowed under professional oversight", effects: { A1: 0.8, D1: -1 } },
       { text: "Something to ban for everyone's good", effects: { A1: 1.6, D1: -2 } },
     ],
   },
@@ -680,7 +680,7 @@ const questions = [
     answers: [
       { text: "Being sick", effects: { D3: 2.5 } },
       { text: "Maybe being sick", effects: { D3: 1.25 } },
-      { text: "Risk of being sick", effects: {} },
+      { text: "Risk of getting sick", effects: {} },
       { text: "Outwaiting outbreaks", effects: { D3: -1.25 } },
       { text: "Preventing outbreaks", effects: { D3: -2.5 } },
     ],
